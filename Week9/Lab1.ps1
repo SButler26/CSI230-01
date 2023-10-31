@@ -7,6 +7,7 @@ Get-CimInstance Win32_NetworkAdapterConfiguration -Filter "DHCPEnabled=$true" | 
 
 (Get-DnsClientServerAddress -AddressFamily IPv4 | where InterfaceAlias -ilike "Ethernet*").ServerAddresses[0]
 
+cd C:\Users\champuser\CSI230-01\Week9
 
 $files=(ls -Name)
 for($i=0; $i -lt $files.Length; $i++){

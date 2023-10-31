@@ -1,0 +1,1 @@
+﻿ps | where { $_.Path -inotlike "*system32*" }
